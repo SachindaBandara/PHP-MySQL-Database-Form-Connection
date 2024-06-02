@@ -28,5 +28,4 @@ include 'databaseConnection.php';
 
     mysqli_close($conn);
 
-
     ?>
