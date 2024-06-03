@@ -13,7 +13,7 @@ if(mysqli_query($conn, $sql)){
 
 mysqli_close($conn);
 
-// // Insert Multipal Data
+//  Insert Multipal Data
 
 // $sql = "INSERT INTO students (name, age, grade)
 //  VALUES ('kamal', 12, 'A');";
