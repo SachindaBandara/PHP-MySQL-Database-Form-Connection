@@ -1,11 +1,5 @@
 <?php
 include 'databaseConnection.php';
-include 'selection.php';
-include 'insertData.php';
-include 'where.php';
-include 'delete.php';
-include 'update.php';
-
 ?>
 
 <!DOCTYPE html>
