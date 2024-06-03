@@ -1,17 +1,17 @@
 <?php
 include 'databaseConnection.php';
 
-// $sql = "INSERT INTO students (name, age, grade)
-//  VALUES ('kamal', 12, 'A');";
+$sql = "INSERT INTO students (name, age, grade)
+ VALUES ('kamal', 12, 'A');";
 
-// if(mysqli_query($conn, $sql)){
-//      echo "<br>";
-//     echo "New records created successfully";
-// }else{
-//     echo "Error". mysqli_error($conn);
-// }
+if(mysqli_query($conn, $sql)){
+     echo "<br>";
+    echo "New records created successfully";
+}else{
+    echo "Error". mysqli_error($conn);
+}
 
-// mysqli_close($conn);
+mysqli_close($conn);
 
 // // Insert Multipal Data
 
