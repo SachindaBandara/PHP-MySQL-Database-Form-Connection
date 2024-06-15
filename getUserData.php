@@ -23,8 +23,8 @@ include 'databaseConnection.php';
     <?php
 
     if (isset($_POST['btnSubmit'])) {
-        $uName = $_POST['uname'];
-        $uAge = $_POST['uage'];
+        $uName = $_POST['uname']; // get the user's name form the created form
+        $uAge = $_POST['uage']; // get the user's age form the created form
 
         $sql = "INSERT INTO user(name, age) VALUES('$uName', '$uAge');";
 
@@ -33,7 +33,7 @@ include 'databaseConnection.php';
         } else {
             echo "Error" . mysqli_connect_error();
         }
-
+        // close the database connection
         mysqli_close($conn);
     }
     ?>

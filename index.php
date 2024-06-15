@@ -19,7 +19,7 @@ include 'databaseConnection.php';
     if (mysqli_query($conn, $sql)) {
         echo "Inserted successfully";
     }
-
+    // close the database connection
     mysqli_close($conn);
     ?>
 </body>

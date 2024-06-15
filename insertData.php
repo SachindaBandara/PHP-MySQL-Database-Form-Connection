@@ -4,13 +4,13 @@ include 'databaseConnection.php';
 $sql = "INSERT INTO students (name, age, grade)
  VALUES ('kamal', 12, 'A');";
 
-if(mysqli_query($conn, $sql)){
-     echo "<br>";
+if (mysqli_query($conn, $sql)) {
+    echo "<br>";
     echo "New records created successfully";
-}else{
-    echo "Error". mysqli_error($conn);
+} else {
+    echo "Error" . mysqli_error($conn);
 }
-
+// close the database connection
 mysqli_close($conn);
 
 //  Insert Multipal Data
@@ -23,7 +23,7 @@ mysqli_close($conn);
 
 // $sql = "INSERT INTO students (name, age, grade)
 //  VALUES ('Nimala', 18, 'C');";
- 
+
 
 // if(mysqli_multi_query($conn, $sql)){
 //     echo "<br>";
@@ -31,7 +31,5 @@ mysqli_close($conn);
 // }else{
 //     echo "Error". mysqli_error($conn);
 // }
-
+// close the database connection
 // mysqli_close($conn);
-
-?>

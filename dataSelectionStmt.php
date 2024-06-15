@@ -41,6 +41,8 @@ include 'databaseConnection.php';
             // Get the data
             $result = mysqli_stmt_get_result($stmt);
 
+
+            // mysqli_fetch_assoc store the data as an arry
             while ($row = mysqli_fetch_assoc($result)) {
 
                 echo $row['id'] . "  " . $row['name'] . "  " . $row['age'] . "<br/>";
